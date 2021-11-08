@@ -1,0 +1,32 @@
+﻿<div id="googleMap" style="width: inherit; height: inherit;"></div>
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex justify-content-center">
+    <a class="btn form-group btn-voltar-mapa" href="@Url.Action("Index","Denunciante")"><i class="fa fa-mail-reply"></i> VOLTAR</a>
+</div>
+
+<div class="modal fade" role="dialog" id="modalLocalApoio">
+    <div class="modal-dialog">
+        <div class="m-0 modal-content">
+            <div class="modal-body">
+                <label><b id="titulo-endereco"></b></label><br />
+                <label id="descricao-endereco"></label>
+                <hr />
+                <label><b id="titulo-bairro"></b></label><br />
+                <label id="descricao-bairro"></label>
+                <hr />
+                <label><b id="titulo-cidade"></b></label><br />
+                <label id="descricao-cidade"></label>
+                <hr />
+                <label><b id="titulo-estado"></b></label><br />
+                <label id="descricao-estado"></label>
+                <hr />
+                <label><b id="titulo-telefone"></b></label><br />
+                <label id="descricao-telefone"></label>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-large btn-tema form-group" data-dismiss="modal" id="abrir-google"><i class="fa fa-google"></i> Abrir no Google</a>
+                <a class="btn btn-large btn-tema form-group" data-bs-dismiss="modal"><i class="fa fa-close"></i> Fechar</a>
+            </div>
+        </div>
+    </div>
+</div>

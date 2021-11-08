@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3FEBF46F-6318-4C1B-9B66-B373CAB8D829}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DLLsSosPernambucanas</RootNamespace>
+    <AssemblyName>DLLsSosPernambucanas</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\BoAtendente.cs" />
+    <Compile Include="BLL\BoDenunciante.cs" />
+    <Compile Include="BLL\BoLocalApoio.cs" />
+    <Compile Include="BLL\BoOcorrencia.cs" />
+    <Compile Include="BLL\BoRegistroLigacao.cs" />
+    <Compile Include="BLL\BoToken.cs" />
+    <Compile Include="BLL\BoUsuario.cs" />
+    <Compile Include="DAL\Conn\Conexao.cs" />
+    <Compile Include="DAL\Database\Atendente\DaoAtendente.cs" />
+    <Compile Include="DAL\Database\Atendente\IDaoAtendente.cs" />
+    <Compile Include="DAL\Database\Denunciante\DaoDenunciante.cs" />
+    <Compile Include="DAL\Database\Denunciante\IDaoDenunciante.cs" />
+    <Compile Include="DAL\Database\LocalApoio\DaoLocalApoio.cs" />
+    <Compile Include="DAL\Database\LocalApoio\IDaoLocalApoio.cs" />
+    <Compile Include="DAL\Database\Ocorrencia\DaoOcorrencia.cs" />
+    <Compile Include="DAL\Database\Ocorrencia\IDaoOcorrencia.cs" />
+    <Content Include="DAL\Database\Ocorrencia\Procedures\SP_ConsultarOcorrencia.sql" />
+    <Compile Include="DAL\Database\RegistroLigacao\DaoRegistroLigacao.cs" />
+    <Compile Include="DAL\Database\RegistroLigacao\IDaoRegistroLigacao.cs" />
+    <Compile Include="DAL\Database\Token\DaoToken.cs" />
+    <Compile Include="DAL\Database\Token\IDaoToken.cs" />
+    <Compile Include="DAL\Database\Usuario\DaoUsuario.cs" />
+    <Compile Include="DAL\Database\Usuario\IDaoUsuario.cs" />
+    <Compile Include="DML\Atendente.cs" />
+    <Compile Include="DML\Denunciante.cs" />
+    <Compile Include="DML\LocalApoio.cs" />
+    <Compile Include="DML\Ocorrencia.cs" />
+    <Compile Include="DML\RegistroLigacao.cs" />
+    <Compile Include="DML\LogSistema.cs" />
+    <Compile Include="DML\Token.cs" />
+    <Compile Include="DML\Usuario.cs" />
+    <Compile Include="Infrastructure\Constantes.cs" />
+    <Compile Include="Infrastructure\Utilidades.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DAL\Database\Atendente\Procedures\SP_CadastrarAtendente.sql" />
+    <Content Include="DAL\Database\Atendente\Procedures\SP_EditarAtendente.sql" />
+    <Content Include="DAL\Database\Atendente\Procedures\SP_ExcluirAtendente.sql" />
+    <Content Include="DAL\Database\Atendente\Procedures\SP_FiltrarAtendente.sql" />
+    <Content Include="DAL\Database\Atendente\Procedures\SP_ListarAtendentes.sql" />
+    <Content Include="DAL\Database\Atendente\Procedures\SP_SelecionarAtendente.sql" />
+    <Content Include="DAL\Database\Denunciante\Procedures\SP_CadastrarDenunciante.sql" />
+    <Content Include="DAL\Database\Denunciante\Procedures\SP_EditarDenunciante.sql" />
+    <Content Include="DAL\Database\Denunciante\Procedures\SP_ExcluirDenunciante.sql" />
+    <Content Include="DAL\Database\Denunciante\Procedures\SP_ListarDenunciantes.sql" />
+    <Content Include="DAL\Database\Denunciante\Procedures\SP_SelecionarDenunciante.sql" />
+    <Content Include="DAL\Database\Dump.sql" />
+    <Content Include="DAL\Database\LocalApoio\Procedures\SP_CadastrarLocalApoio.sql" />
+    <Content Include="DAL\Database\LocalApoio\Procedures\SP_ExcluirLocalApoio.sql" />
+    <Content Include="DAL\Database\LogSistema\Procedures\SP_CadastrarLogSistema.sql" />
+    <Content Include="DAL\Database\LocalApoio\Procedures\SP_ListarLocaisApoio.sql" />
+    <Content Include="DAL\Database\Ocorrencia\Procedures\SP_AlterarSituacaoLigacao.sql" />
+    <Content Include="DAL\Database\Ocorrencia\Procedures\SP_CadastrarOcorrenciaDenunciante.sql" />
+    <Content Include="DAL\Database\Ocorrencia\Procedures\SP_ListarOcorrencias.sql" />
+    <Content Include="DAL\Database\RegistroLigacao\Procedures\SP_CadastrarRegistroLigacao.sql" />
+    <Content Include="DAL\Database\Token\Procedures\SP_BuscarEmailToken.sql" />
+    <Content Include="DAL\Database\Token\Procedures\SP_BuscarValidadeToken.sql" />
+    <Content Include="DAL\Database\Token\Procedures\SP_CadastrarTokenDb.sql" />
+    <Content Include="DAL\Database\Token\Procedures\SP_GravarAcessoToken.sql" />
+    <Content Include="DAL\Database\Usuario\Procedures\SP_AcessoUsuario.sql" />
+    <Content Include="DAL\Database\Usuario\Procedures\SP_AlterarSenhaUsuario.sql" />
+    <Content Include="DAL\Database\Usuario\Procedures\SP_CadastrarUsuario.sql" />
+    <Content Include="DAL\Database\Usuario\Procedures\SP_VerificarEmailUsuario.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

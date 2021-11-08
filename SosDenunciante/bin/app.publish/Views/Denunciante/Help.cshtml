@@ -1,0 +1,80 @@
+﻿<div class="row p-1">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+</div>
+<div class="row p-1">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mt-5">
+        <p class="help-title">Mulher Protegida</p>
+    </div>
+</div>
+<div class="container">
+    <div class="row d-flex justify-content-center mt-3">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex justify-content-center">
+            <div class="accordion" id="accordionLigar" style="width:100%;">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingLigar">
+                        <button class="accordion-button btn-thema-accordion-overlay" type="button" data-bs-toggle="collapse" data-bs-target="#Ligar" aria-controls="Ligar">
+                            <b>LIGUE 180</b>
+                        </button>
+                    </h2>
+                    <div id="Ligar" class="accordion-collapse collapse show" aria-labelledby="headingLigar" data-bs-parent="#accordionLigar">
+                        <div class="accordion-body text-center">
+                            <p class="descricao">
+                                Central de atendimento às mulheres em situação de violência.
+                                O serviço 180 é gratuito, confidencial e funciona 24h em todo o Brasil.
+                                Ele recebe denúncias, monitora os serviços da rede de atendimento e orienta sobre direitos e sobre a legislação vigente.
+                                Os dados coletados embasam as políticas públicas de enfrentamento à violência contra as mulheres.
+                                <b>Mas, caso você esteja em situação de risco e violência neste momento e precise de ajuda agora, ligue para 190, para acionar a polícia.</b>
+                                <br />&nbsp;
+                            </p>
+                            <a class="btn-tema-ligar" onclick="ClickSocorro(180)"><i class="fa fa-heart"></i>  LIGAR 180</a>
+                            <a class="btn-tema-ligar" onclick="ClickSocorro(190)"><i class="fa fa-shield"></i> LIGAR 190</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex justify-content-center mt-3">
+            <div class="accordion" id="accordionMariaPenha" style="width:100%;">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingMariaPenha">
+                        <button class="accordion-button btn-thema-accordion-overlay" type="button" data-bs-toggle="collapse" data-bs-target="#MariaPenha" aria-expanded="true" aria-controls="MariaPenha">
+                            <b>LEI MARIA DA PENHA</b>
+                        </button>
+                    </h2>
+                    <div id="MariaPenha" class="accordion-collapse collapse show" aria-labelledby="headingMariaPenha" data-bs-parent="#accordionMariaPenha">
+                        <div class="accordion-body text-center">
+                            <p class="descricao">
+                                Lei 11.340 (2006) que criminaliza a violência física, psicológica, moral, pratimonial e sexual contra as mulheres. Estabelece medidas de prevenção,
+                                proteção e o atendimento multidisciplinar gratuito. Além disso, cria os juizados especiais de violência doméstica e familiar.
+                                <br />&nbsp;
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex justify-content-center mt-3">
+            <div class="accordion" id="accordionHumanidade" style="width:100%;">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingHumanidade">
+                        <button class="accordion-button btn-thema-accordion-overlay" type="button" data-bs-toggle="collapse" data-bs-target="#Humanidade" aria-expanded="true" aria-controls="Humanidade">
+                            <b>HUMANIDADE</b>
+                        </button>
+                    </h2>
+                    <div id="Humanidade" class="accordion-collapse collapse show" aria-labelledby="headingHumanidade" data-bs-parent="#accordionHumanidade">
+                        <div class="accordion-body text-center">
+                            <p class="descricao">
+                                O decreto 7.958 (2013) prevê a capacitação de profissionais da saúde e segurança pública.
+                                Estabelece diretrizes de acolhimento, escuta e orientação, além de fornecer informações e transporte para mulheres vítimas de violência.
+                                <br />&nbsp;
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex justify-content-center p-3">
+            <a class="btn btn-large btn-tema form-group" href="@Url.Action("Index","Denunciante")"><i class="fa fa-mail-reply"></i> VOLTAR</a>
+        </div>
+    </div>
+</div>

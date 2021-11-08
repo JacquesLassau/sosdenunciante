@@ -1,0 +1,57 @@
+﻿@model SosDenunciante.Models.Denunciante
+@{
+    ViewBag.Title = "Cadastro de Denunciante";
+    string local = Url.Action("Register", "Authentication");
+    string contexto = Url.Action("Login", "Authentication");
+}
+<div class="hero">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <div class="column is-4 is-offset-4">
+                <div class="box">
+                    <h3 class="label label-tema-sos">CADASTRO</h3>
+                    @using (Html.BeginForm("Register", "Authentication", FormMethod.Post))
+                    {
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <div class="field">
+                            <div class="control">
+                                @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "input is-large", placeholder = "Nome" } })
+                                @Html.ValidationMessageFor(model => model.Nome, "", new { @class = "text-danger float-end p-1" })
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                @Html.EditorFor(model => model.Telefone, new { htmlAttributes = new { type = "tel", @class = "input is-large", placeholder = "Telefone" } })
+                                @Html.ValidationMessageFor(model => model.Telefone, "", new { @class = "text-danger float-end p-1" })
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "input is-large", placeholder = "E-mail" } })
+                                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger float-end p-1" })
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                @Html.EditorFor(model => model.Senha, new { htmlAttributes = new { @class = "input is-large", placeholder = "Senha" } })
+                                @Html.ValidationMessageFor(model => model.Senha, "", new { @class = "text-danger float-end p-1" })
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                @Html.EditorFor(model => model.ConfirmaSenha, new { htmlAttributes = new { @class = "input is-large", placeholder = "Confirmar Senha" } })
+                                @Html.ValidationMessageFor(model => model.ConfirmaSenha, "", new { @class = "text-danger float-end p-1" })
+                            </div>
+                        </div>
+                        <button type="submit" value="Login" name="btnLogin" class="button is-block is-link is-large is-fullwidth"><i class="fa fa-sign-in"></i> Entrar</button>
+                        <hr/>
+                        <a class="button is-block btn-cadastro is-fullwidth" href="@Url.Action("Login","Authentication")"><i class="fa fa-mail-reply"></i> Voltar</a>
+                        @Html.AntiForgeryToken()
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {@Scripts.Render("~/bundles/jqueryval")}

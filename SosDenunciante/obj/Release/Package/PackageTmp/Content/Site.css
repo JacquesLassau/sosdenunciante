@@ -1,0 +1,256 @@
+﻿body {
+    margin: 0;
+}
+
+.pagina {
+    background-image: url('../Images/fundo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.descricao {
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: #3f51b5;
+}
+
+button {
+    font-family: Sen, Roboto,"Helvetica Neue",sans-serif;
+}
+
+.jconfirm.jconfirm-light .jconfirm-box .jconfirm-buttons button.btn-default {
+    background-color: #9b59b6;
+    color: #fff !important;
+    border: 1px solid #9b59b6 !important;
+}
+
+    .jconfirm.jconfirm-light .jconfirm-box .jconfirm-buttons button.btn-default:hover {
+        background-color: #fff !important;
+        color: #9b59b6 !important;
+        border: 1px solid #9b59b6 !important;
+    }
+
+link-esqueci-senha {
+    color: #3f51b5 !important;
+    text-decoration: none !important;
+}
+
+    link-esqueci-senha:hover {
+        color: #1d3093 !important;
+        text-decoration: underline !important;
+    }
+
+.btn-logout {
+    background-color: rgba(255,255,255,0);
+    color: #3f51b5;
+    border-color: #3f51b5;
+    border-radius: 16px;
+    position: absolute;
+    cursor: pointer;
+    top: 0.5%;
+    right: 1.6%;
+}
+
+    .btn-logout:hover {
+        background-color: #3f51b5;
+        color: #fff;
+        border-color: rgba(26,35,126,1);
+        border-radius: 16px;
+        position: absolute;
+        cursor: pointer;
+        top: 0.5%;
+        right: 1.6%;
+    }
+
+.btn-tema {
+    background-color: #3f51b5;
+    color: #fff;
+    border-color: rgba(26,35,126,1);
+    border-radius: 16px;
+}
+
+    .btn-tema:hover {
+        background-color: rgba(255,255,255,0);
+        color: #3f51b5;
+        border-color: #3f51b5;
+        border-radius: 16px;
+    }
+
+.btn-tema-ligar {
+    background-color: #3f51b5;
+    color: #fff;
+    border: 1px solid rgba(26,35,126,1);
+    border-radius: 16px;
+    padding: 12px;
+    text-decoration: none;
+}
+
+    .btn-tema-ligar:hover {
+        background-color: rgba(255,255,255,0);
+        color: #3f51b5;
+        border: 1px solid #3f51b5;
+        border-radius: 16px;
+        padding: 12px;
+        text-decoration: none;
+    }
+
+.btn-login-overlay {
+    background-color: rgba(255,255,255,0);
+    color: #fff;
+    border-radius: 16px;
+}
+
+    .btn-login-overlay:hover {
+        background-color: #fff;
+        color: #3f51b5;
+        border-color: rgba(26,35,126,0.5);
+        border-radius: 16px;
+        cursor: pointer;
+    }
+
+.btn-tema-overlay {
+    background-color: rgba(255,255,255,0.1);
+    color: #3f51b5;
+    border-color: #3f51b5;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+    .btn-tema-overlay:hover {
+        background-color: #3f51b5;
+        color: #fff;
+        border-color: rgba(26,35,126,0.5);
+        border-radius: 16px;
+    }
+
+.btn-thema-accordion-overlay {
+    background-color: #fff;
+    color: #3f51b5;
+}
+
+.help-title {
+    width: 100%;
+    text-align: center;
+    font-family: Sen, Roboto,"Helvetica Neue",sans-serif;
+    color: rgb(205,50,145);
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+.btn-tema {
+    background-color: #3f51b5;
+    color: #fff;
+    border-color: rgba(26,35,126,1);
+    border-radius: 16px;
+    padding: 12px;
+}
+
+    .btn-tema:hover {
+        background-color: rgba(255,255,255,0);
+        color: #3f51b5;
+        border-color: #3f51b5;
+        border-radius: 16px;
+        padding: 12px;
+    }
+
+.input-tema-sos {
+    border-color: #3f51b5;
+    font-family: Sen, Roboto,"Helvetica Neue",sans-serif;
+}
+
+    .input-tema-sos:hover {
+        border-color: #3f51b5;
+        color: #3f51b5;
+        font-family: Sen, Roboto,"Helvetica Neue",sans-serif;
+    }
+
+button {
+    font-family: Sen, Roboto,"Helvetica Neue",sans-serif;
+}
+
+.label-tema-sos {
+    color: #3f51b5;
+}
+
+.help-title {
+    color: #3f51b5;
+    width: 100%;
+    text-align: center;
+    font-family: Sen, Roboto,"Helvetica Neue",sans-serif;
+}
+
+.btn-cadastro {
+    background-color: rgba(255,255,255,0);
+    color: #3f51b5;
+    border-color: #3f51b5;
+    text-decoration: none;
+}
+
+    .btn-cadastro:hover {
+        background-color: rgb(253,241,235);
+        color: #3f51b5;
+        border-color: #3f51b5;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+hr.line-login-hero {
+    border-top: 1px solid #3f51b5;
+}
+
+.btn-voltar-mapa {
+    position: absolute;
+    bottom: 3.3%;
+    background-color: #3f51b5;
+    color: #fff;
+    border-color: rgba(26,35,126,1);
+    border-radius: 16px;
+    padding: 12px;
+}
+
+    .btn-voltar-mapa:hover {
+        position: absolute;
+        bottom: 3.3%;
+        background-color: #fff;
+        color: #3f51b5;
+        border-color: #3f51b5;
+        border-radius: 16px;
+        padding: 12px;
+    }
+
+.btn-google-maps {
+    background-color: #3f51b5;
+    color: #fff;
+    border-color: #3f51b5;
+    border-radius: 0px;
+}
+
+    .btn-google-maps:hover {
+        background-color: rgba(255,255,255,0);
+        color: #3f51b5;
+        border-color: #3f51b5;
+        border-radius: 0px;
+    }
+
+.critica-recuperar-email {
+    visibility: hidden;
+    display: none;
+}
+
+button.gm-ui-hover-effect {
+    visibility: hidden;
+}
+
+.gm-style .gm-style-iw-c {
+    padding: 0;
+}
+
+.gm-style-iw .gm-style-iw-d {
+    overflow: auto !important;
+}

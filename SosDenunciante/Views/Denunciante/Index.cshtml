@@ -1,0 +1,37 @@
+﻿@model DLLsSosPernambucanas.DML.Denunciante
+@{
+    ViewBag.Title = "Início";
+    string local = Url.Action("Index", "Denunciante");
+}
+
+<div class="row p-1">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <label class="descricao"><i class="fa fa-female"></i> @Session["sessaoEmail"]</label>
+        <a href="@Url.Action("Logout","Authentication")"  class="btn btn-logout form-group"><i class="fa fa-sign-out"></i></a>
+    </div>
+</div>
+<div class="container">
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 d-flex justify-content-center mt-5">
+            <img class="img-responsive" src="../Images/logo.png" style="width:100%" />
+        </div>
+    </div>
+    <div class="row d-flex justify-content-center mt-3">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex justify-content-center">
+            <p class="text-wrap text-center descricao">
+                Somos uma plataforma colaborativa com o intuito de fornecer ajuda, atráves de informações e ações,
+                a mulheres em situação de vulnerabilidade e que sofrem, ou sofreram, violência de gênero.
+            <p />
+        </div>
+    </div>
+    <div class="row d-flex justify-content-center mt-3">
+        <div class="d-grid col-lg-4 col-md-3 col-sm-12 col-xs-12 mx-auto p-1"></div>
+        <div class="d-grid col-lg-2 col-md-3 col-sm-12 col-xs-12 mx-auto p-1">
+            <a class="btn btn-tema form-group" href="@Url.Action("Help","Denunciante")"><i class="fa fa-exclamation-circle"></i> PRECISO DE AJUDA</a>
+        </div>
+        <div class="d-grid col-lg-2 col-md-3 col-sm-12 col-xs-12 mx-auto p-1">
+            <a class="btn btn-tema form-group" href="@Url.Action("LocalHelp","Denunciante")"><i class="fa fa-map-marker"></i> LOCAIS DE APOIO</a>
+        </div>
+        <div class="d-grid col-lg-4 col-md-3 col-sm-12 col-xs-12 mx-auto p-1"></div>
+    </div>
+</div>

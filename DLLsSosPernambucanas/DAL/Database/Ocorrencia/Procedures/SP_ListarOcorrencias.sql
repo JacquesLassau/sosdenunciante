@@ -1,0 +1,38 @@
+﻿USE [DbSosPernambucanas]
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[SP_ListarOcorrencias]
+
+AS
+BEGIN
+	IF NOT EXISTS (Select	
+		IdOCORRENCIA, 
+		NOMeDENUNCIANTE,  
+		TELEFONeDENUNCIANTE,
+		NUMERoTELEFONeLIGACAO,
+		DESCRICAoTELEFONeLIGACAO,
+		DATaHORaLIGACAO,
+		SITUACAoLIGACAO
+		From Ocorrencia With(nolock))			
+	BEGIN					
+		Insert Into LogSistema Values ('Não existem ocorrencias cadastrados no sistema.', GETUTCDATE());		
+	END	
+	ELSE
+	BEGIN
+		Select	
+		IdOCORRENCIA, 
+		NOMeDENUNCIANTE,  
+		TELEFONeDENUNCIANTE,
+		NUMERoTELEFONeLIGACAO,
+		DESCRICAoTELEFONeLIGACAO,
+		DATaHORaLIGACAO,
+		SITUACAoLIGACAO
+		From Ocorrencia With(nolock)
+	END
+END
+GO
